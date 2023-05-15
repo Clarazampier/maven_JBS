@@ -22,9 +22,9 @@ jobs:
    - name: Compilando Java 
       run: |
         cd src
-       javac -cp . Main.java 
+       javac -cp . Teste.java 
 
- - name: Rodando o Programa2
+ - name: Rodando o Programa
       run: |
         cd src
         java -cp . Teste
