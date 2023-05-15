@@ -34,7 +34,7 @@ jobs:
       name: Build & push Docker image
       with:
         image: anaclaraz/native_jbs
-        tags: 1.0, 1.1
+        tags: ${{ github.run_number }}
         registry: docker.io
         dockerfile: dockerfile
         username: ${{ secrets.DOCKER_USERNAME }}
